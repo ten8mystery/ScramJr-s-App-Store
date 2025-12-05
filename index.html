@@ -7,140 +7,140 @@
   <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
   <link rel="manifest" href="manifest.webmanifest">
   <style>
-  :root {
-    --bg: #f1f3f4;
-    --panel: #ffffff;
-    --accent: #1a73e8;
-    --text: #202124;
-    --subtext: #5f6368;
-    --radius: 16px;
-    --shadow: 0 1px 4px rgba(0,0,0,0.1);
-    --shadow-hover: 0 6px 18px rgba(0,0,0,0.12);
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: "Roboto", Arial, sans-serif;
-  }
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: var(--panel);
-    border-bottom: 1px solid #dadce0;
-    padding: 18px 26px;
-  }
-  .brand { display: flex; align-items: center; gap: 12px; }
-  .brand-logo {
-    font-size: 1.3rem;
-    background: var(--accent);
-    color: #fff;
-    padding: 10px 14px;
-    border-radius: 10px;
-    font-weight: 600;
-  }
-  .search-bar {
-    display: flex;
-    align-items: center;
-    background: #fff;
-    padding: 8px 14px;
-    border-radius: 24px;
-    border: 1px solid #dadce0;
-    gap: 8px;
-  }
-  .search-bar input { border:none; outline:none; font-size:0.95rem; }
+    :root {
+      --bg: #f1f3f4;
+      --panel: #ffffff;
+      --accent: #1a73e8;
+      --text: #202124;
+      --subtext: #5f6368;
+      --radius: 16px;
+      --shadow: 0 1px 4px rgba(0,0,0,0.1);
+      --shadow-hover: 0 6px 18px rgba(0,0,0,0.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Roboto", Arial, sans-serif;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--panel);
+      border-bottom: 1px solid #dadce0;
+      padding: 18px 26px;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .brand-logo {
+      font-size: 1.3rem;
+      background: var(--accent);
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      padding: 8px 14px;
+      border-radius: 24px;
+      border: 1px solid #dadce0;
+      gap: 8px;
+    }
+    .search-bar input { border:none; outline:none; font-size:0.95rem; }
 
-  .categories {
-    display: flex;
-    gap: 12px;
-    padding: 16px 26px;
-    background: var(--panel);
-    border-bottom: 1px solid #e0e0e0;
-  }
-  .categories button {
-    padding: 8px 18px;
-    border-radius: 20px;
-    background: #e8eaed;
-    border: none;
-    cursor: pointer;
-    color: var(--text);
-  }
-  .categories button.active { background: var(--accent); color: #fff; }
+    .categories {
+      display: flex;
+      gap: 12px;
+      padding: 16px 26px;
+      background: var(--panel);
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .categories button {
+      padding: 8px 18px;
+      border-radius: 20px;
+      background: #e8eaed;
+      border: none;
+      cursor: pointer;
+      color: var(--text);
+    }
+    .categories button.active { background: var(--accent); color: #fff; }
 
-  .grid {
-    padding: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 26px;
-  }
+    .grid {
+      padding: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 26px;
+    }
 
-  .card {
-    background: #fff;
-    padding: 18px;
-    border-radius: var(--radius);
-    border: 1px solid #e0e0e0;
-    box-shadow: var(--shadow);
-    transition: 0.25s ease;
-  }
-  .card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-hover);
-  }
-  .app-icon {
-    width: 52px;
-    height: 52px;
-    background: var(--accent);
-    color: #fff;
-    font-size: 1.1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
-    font-weight: 600;
-  }
+    .card {
+      background: #fff;
+      padding: 18px;
+      border-radius: var(--radius);
+      border: 1px solid #e0e0e0;
+      box-shadow: var(--shadow);
+      transition: 0.25s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+    }
+    .app-icon {
+      width: 52px;
+      height: 52px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      font-weight: 600;
+    }
 
-  .install-btn {
-    margin-top: 12px;
-    width: 100%;
-    padding: 10px;
-    border-radius: 22px;
-    background: var(--accent);
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
+    .install-btn {
+      margin-top: 12px;
+      width: 100%;
+      padding: 10px;
+      border-radius: 22px;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
 
-  .modal-backdrop {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.35);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-  }
-  .modal {
-    background: #fff;
-    padding: 26px;
-    border-radius: var(--radius);
-    width: 460px;
-    box-shadow: var(--shadow-hover);
-  }
-  .modal-app-icon {
-    width: 80px;
-    height: 80px;
-    border-radius: 18px;
-    background: var(--accent);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.7rem;
-    font-weight: 600;
-  }
-  .tag { background: #e8eaed; padding:4px 8px; border-radius:6px; font-size:0.75rem; }
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.35);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .modal {
+      background: #fff;
+      padding: 26px;
+      border-radius: var(--radius);
+      width: 460px;
+      box-shadow: var(--shadow-hover);
+    }
+    .modal-app-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 18px;
+      background: var(--accent);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.7rem;
+      font-weight: 600;
+    }
+    .tag { background: #e8eaed; padding:4px 8px; border-radius:6px; font-size:0.75rem; }
   </style>
 </head>
 <body>
@@ -200,8 +200,6 @@ let APPS = [];
 let CURRENT_APP = null;
 
 async function loadApps() {
-  let APPS = [];
-
   // Test fallback for apps.json if fetch fails
   try {
     const res = await fetch('apps.json');
@@ -276,3 +274,8 @@ document.querySelectorAll('.categories button').forEach(btn => {
     currentFilter = btn.dataset.filter;
     renderApps();
   });
+});
+</script>
+
+</body>
+</html>
