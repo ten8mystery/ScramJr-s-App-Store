@@ -283,44 +283,10 @@ function renderApps() {
     `;
 
     card.querySelector('.install-btn').addEventListener('click', () => openModal(app));
-search.addEventListener('input', renderApps);
-
-search.addEventListener('input', renderApps);
-
-document.querySelectorAll('.categories button').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelector('.categories .active')?.classList.remove('active');
-    btn.classList.add('active');
-    currentFilter = btn.dataset.filter;
-    renderApps();
-  });
-});
-
-const backdrop = document.getElementById('backdrop');
-
-function openModal(app) {
-  CURRENT_APP = app;
-  backdrop.style.display = 'flex';
-
-  document.getElementById('modal-title').textContent = app.title;
-  document.getElementById('modal-dev').textContent = 'by ' + app.dev;
-  document.getElementById('modal-rating').textContent = '★ ' + app.rating;
-  document.getElementById('modal-desc').textContent = app.desc;
-  document.getElementById('modal-category').textContent = app.cat;
-  document.getElementById('modal-icon').style.background = app.color;
-  document.getElementById('modal-icon').textContent = app.iconText;
-
-  const tags = document.getElementById('modal-tags');
-  tags.innerHTML = '';
-  app.tags.forEach(t => {
-    const s = document.createElement('span');
-    s.className = 'tag';
-    s.textContent = t;
-    tags.appendChild(s);
+    grid.appendChild(card);
   });
 }
-);
-}
+
 
 document.getElementById('install').onclick = () => {
   if (!CURRENT_APP) return;
