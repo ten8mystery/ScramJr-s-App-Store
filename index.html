@@ -200,13 +200,34 @@ let APPS = [];
 let CURRENT_APP = null;
 
 async function loadApps() {
+  let APPS = [];
+
+  // Test fallback for apps.json if fetch fails
   try {
     const res = await fetch('apps.json');
-    APPS = await res.json();
-    renderApps();
+    if (res.ok) {
+      APPS = await res.json();
+    } else {
+      throw new Error('Fetch error');
+    }
   } catch (err) {
-    console.error('Failed to load apps.json:', err);
+    console.error('Fetching apps.json failed, using fallback data.');
+    APPS = [
+      {
+        "id": 1,
+        "title": "Test App",
+        "dev": "Test Dev",
+        "cat": "productivity",
+        "rating": 4.5,
+        "desc": "A test app for fallback.",
+        "tags": ["test", "example"],
+        "iconText": "TA",
+        "color": "#7c3aed",
+        "pwa": "/apps/test/index.html"
+      }
+    ];
   }
+  renderApps();
 }
 
 const grid = document.getElementById('grid');
