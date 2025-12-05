@@ -283,8 +283,7 @@ function renderApps() {
     `;
 
     card.querySelector('.install-btn').addEventListener('click', () => openModal(app));
-    grid.appendChild(card);
-  }
+search.addEventListener('input', renderApps);
 
 search.addEventListener('input', renderApps);
 
