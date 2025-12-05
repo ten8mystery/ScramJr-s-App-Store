@@ -1,25 +1,27 @@
 [
   {
     "id": 1,
-    "title": "Minecraft Launcher",
-    "dev": "Mojang Studios",
-    "cat": "games",
+    "title": "Nebula Notes",
+    "dev": "Ink & Pixel",
+    "cat": "productivity",
     "rating": 4.8,
-    "desc": "A full Minecraft Launcher for you",
-    "tags": ["gaming", "voxel", "cloud"],
-    "iconText": "MC",
-    "color": "#7c3aed"
+    "desc": "A fast note app with markdown and sync.",
+    "tags": ["notes", "markdown", "cloud"],
+    "iconText": "NN",
+    "color": "#7c3aed",
+    "download": "https://www.example.com"
   },
   {
     "id": 2,
-    "title": "BeatBox",
+    "title": "BeatBox Studio",
     "dev": "Soundwave Labs",
     "cat": "music",
     "rating": 4.6,
-    "desc": "Create beats on the go with an intuitive sequencer and sample packs.",
-    "tags": ["beats", "sampler", "music"],
+    "desc": "Beat maker and sequencer.",
+    "tags": ["music", "producer"],
     "iconText": "BB",
-    "color": "#06b6d4"
+    "color": "#06b6d4",
+    "download": "/installer/beatbox.html"
   },
   {
     "id": 3,
@@ -27,10 +29,11 @@
     "dev": "Orbit Games",
     "cat": "games",
     "rating": 4.7,
-    "desc": "Endless runner with crisp graphics and daily challenges.",
-    "tags": ["arcade", "runner", "endless"],
+    "desc": "Endless arcade runner.",
+    "tags": ["runner", "arcade"],
     "iconText": "SR",
-    "color": "#ef4444"
+    "color": "#ef4444",
+    "download": "/installer/skyward.html"
   },
   {
     "id": 4,
@@ -38,9 +41,10 @@
     "dev": "CalmTech",
     "cat": "productivity",
     "rating": 4.9,
-    "desc": "Pomodoro timer, focus music, and distraction blocking.",
-    "tags": ["focus", "pomodoro", "productivity"],
+    "desc": "A clean Pomodoro timer.",
+    "tags": ["focus", "timer"],
     "iconText": "FF",
-    "color": "#10b981"
+    "color": "#10b981",
+    "download": "/installer/focusflow.html"
   }
 ]
