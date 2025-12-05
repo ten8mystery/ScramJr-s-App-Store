@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "title": "Minecraft Launcher",
+    "dev": "Mojang Studios",
+    "cat": "games",
+    "rating": 4.8,
+    "desc": "A full Minecraft Launcher for you",
+    "tags": ["gaming", "voxel", "cloud"],
+    "iconText": "MC",
+    "color": "#7c3aed"
+  },
+  {
+    "id": 2,
+    "title": "BeatBox",
+    "dev": "Soundwave Labs",
+    "cat": "music",
+    "rating": 4.6,
+    "desc": "Create beats on the go with an intuitive sequencer and sample packs.",
+    "tags": ["beats", "sampler", "music"],
+    "iconText": "BB",
+    "color": "#06b6d4"
+  },
+  {
+    "id": 3,
+    "title": "Skyward Runner",
+    "dev": "Orbit Games",
+    "cat": "games",
+    "rating": 4.7,
+    "desc": "Endless runner with crisp graphics and daily challenges.",
+    "tags": ["arcade", "runner", "endless"],
+    "iconText": "SR",
+    "color": "#ef4444"
+  },
+  {
+    "id": 4,
+    "title": "FocusFlow",
+    "dev": "CalmTech",
+    "cat": "productivity",
+    "rating": 4.9,
+    "desc": "Pomodoro timer, focus music, and distraction blocking.",
+    "tags": ["focus", "pomodoro", "productivity"],
+    "iconText": "FF",
+    "color": "#10b981"
+  }
+]
