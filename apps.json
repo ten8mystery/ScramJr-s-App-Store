@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Nebula Notes",
+    "dev": "Ink & Pixel",
+    "cat": "productivity",
+    "rating": 4.8,
+    "desc": "Markdown note-taking app.",
+    "tags": [
+      "notes",
+      "markdown",
+      "sync"
+    ],
+    "iconText": "NN",
+    "color": "#7c3aed",
+    "pwa": "/apps/nebula/index.html"
+  }
+]
