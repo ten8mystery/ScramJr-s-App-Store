@@ -238,6 +238,7 @@
 <script>
 // -------- Load apps.json instead of hardcoded data --------
 let APPS = [];
+let CURRENT_APP = null;
 
 async function loadApps() {
   try {
@@ -283,8 +284,7 @@ function renderApps() {
 
     card.querySelector('.install-btn').addEventListener('click', () => openModal(app));
     grid.appendChild(card);
-  });
-}
+  }
 
 search.addEventListener('input', renderApps);
 
@@ -300,6 +300,7 @@ document.querySelectorAll('.categories button').forEach(btn => {
 const backdrop = document.getElementById('backdrop');
 
 function openModal(app) {
+  CURRENT_APP = app;
   backdrop.style.display = 'flex';
 
   document.getElementById('modal-title').textContent = app.title;
@@ -319,10 +320,13 @@ function openModal(app) {
     tags.appendChild(s);
   });
 }
+);
+}
 
 document.getElementById('install').onclick = () => {
-  const name = document.getElementById('modal-title').textContent;
-  window.location.href = `/install?name=${encodeURIComponent(name)}`;
+  if (!CURRENT_APP) return;
+  // Send to install page as app (no downloading)
+  window.location.href = `/install?app=${encodeURIComponent(CURRENT_APP.id)}`;
 };
 
 document.getElementById('close').onclick = () => (backdrop.style.display = 'none');
